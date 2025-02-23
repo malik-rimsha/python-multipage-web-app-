@@ -45,8 +45,7 @@ def contact_from():
             if response.status_code == 200:
                 st.success("Your message has been sent successfully! 🎉", icon="🚀")
                 st.balloons()
-            #else:
-                #st.error("There was an error sending your message.", icon="😨")
+            
                 
                 
             
