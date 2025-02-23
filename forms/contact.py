@@ -3,14 +3,14 @@ import streamlit as st
 import requests
 
 
-WEBHOOK_URL =  ["https://connect.pabbly.com/workflow/share/C0NYalEGUjECSFU_BlkBJlpOBwMBWAZjBh8EFlBfB38GXFUAB0YBawtHACJXGFMyUBlSOA5RAGQKHgEFUwUGdQAOBBYAAwZ8VRhRKlYHCjkLVVhwUTA#"]
+WEBHOOK_URL = st.secrets ["WEBHOOK_URL"]
 
 def is_valid_email(email):
     # Besic regex pettern for email validaion
     email_pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
     return re.match(email_pattern, email) is not None
 
-def contact_from():
+def contact_form():
     with st.form("contact_form"):
         name = st.text_input("First Name")
         email = st.text_input("Email Address")
@@ -45,6 +45,8 @@ def contact_from():
             if response.status_code == 200:
                 st.success("Your message has been sent successfully! 🎉", icon="🚀")
                 st.balloons()
+            else:
+                st.error("Failed to send your message. Please try again later.", icon="🚫")
             
                 
                 
