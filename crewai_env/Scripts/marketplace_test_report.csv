@@ -1,0 +1,6 @@
+DAY 05:  Test Report Of My Marketplace,,,,,,,,
+Test Case Id,TC Description,Test Steps, Expected Result, Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Check Product Listing Display,Product display as Expected, Display Correctly, Display Correctly,passed,Medium,-,No /Issue Found
+Tc002,Test Api Error Handling,Fetch Data Well, Fetched,Fetched,passed,high,-,Test Successful
+TC003,Responsivnes, Working Properly to every screen size,Fully Responsive,Responsive,Passed,High,-, Successful
+TC004,Cart Functionality,Add Product TO Cart,Update  Cart,Face Some Minor issue,Passes,Medium,-,Minor Issue

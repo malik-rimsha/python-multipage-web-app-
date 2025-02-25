@@ -9,7 +9,7 @@ about_page = st.Page(
     default=True,
 )
 project_1_page = st.Page(
-    page="views/sales_dashboard.py",
+    page="views/dashboard.py",
     title="Sales Dashboard",
     icon=":material/bar_chart:",
 )
@@ -28,7 +28,7 @@ pg = st.navigation(
 )
 
 # ---SHARED ON ALL PAGES ---
-st.logo("./assets/Mr.png"),
+st.logo("./assets/mr.png"),
 st.sidebar.markdown("Made with ❤️ by [Malik](https://www.linkedin.com/in/malik-rimsha-4319472ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)")
 # ---RUN NAVIGATION --- 
 pg.run()
