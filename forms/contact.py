@@ -1,6 +1,6 @@
 import re
-import streamlit as st
-import requests
+import streamlit as st # type: ignore
+import requests # type: ignore
 
 
 WEBHOOK_URL = st.secrets ["WEBHOOK_URL"]

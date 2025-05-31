@@ -1,7 +1,7 @@
 import random
 import time
 
-import streamlit as st
+import streamlit as st # type: ignore
 
 
 # Streamed response emulator
